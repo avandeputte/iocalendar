@@ -2,7 +2,7 @@
 
 *The family calendar, in the iothing suite (with [iopix](https://github.com/avandeputte/iopix), ionotes and [iocontacts](https://github.com/avandeputte/iocontacts)).*
 
-A self-hosted calendar: a web app for the whole family, and the standard protocols every calendar app already speaks, so the same events show up on phones, in Apple Calendar, Google Calendar, Outlook, Thunderbird and anywhere else. FastAPI and a single-page vanilla JS app, with everything stored in MariaDB / MySQL, and the suite's shared accounts (`iothing-auth`).
+A self-hosted calendar: a web app for the whole family, and the standard protocols every calendar app already speaks, so the same events show up on phones, in Apple Calendar, Google Calendar, Outlook, Thunderbird and anywhere else. FastAPI and a single-page vanilla JS app, with everything stored in MariaDB / MySQL, and the suite's shared library (`iothing-auth`, in [iosuite-shared](https://github.com/avandeputte/iosuite-shared)).
 
 ## What it does
 
@@ -84,7 +84,7 @@ Every version merged into main is released by itself: when `APP_VERSION` (app/__
 
 ## Run
 
-ioCalendar needs Python 3.10+, git (to install `iothing-auth`) and a MariaDB or MySQL database. Give it its own database
+ioCalendar needs Python 3.10+, git (to install `iothing-auth` from the [iosuite-shared](https://github.com/avandeputte/iosuite-shared) repository) and a MariaDB or MySQL database. Give it its own database
 and user, for example:
 
 ```sql

@@ -51,7 +51,7 @@ if [ "$SYSDEPS" != 0 ] && ! python3 -c 'import sys, venv, ensurepip; assert sys.
   elif command -v brew >/dev/null; then brew install python
   else die "install Python 3.10 or newer with venv, then run this again"; fi
 fi
-command -v git >/dev/null || die "git is needed to install the shared accounts library (iothing-auth): install git, then run this again"
+command -v git >/dev/null || die "git is needed to install the suite's shared library (iothing-auth, from the iosuite-shared repository): install git, then run this again"
 PY="${PY:-python3}"
 
 # ---- the answers
